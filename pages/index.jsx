@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <Presente />
-      <Porta porta={p1} />
+      <Porta value={p1} handleSelect={(novaPorta) => setP1(novaPorta)} />
     </div>
   );
 }

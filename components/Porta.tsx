@@ -2,16 +2,19 @@ import PortaModel from "../model/porta";
 import styles from "../styles/porta.module.css";
 
 interface PortaPropos {
-  porta: PortaModel
+  value: PortaModel
+  handleSelect: (novaPorta: PortaModel) => void
 }
 
 export default function Porta(props: PortaPropos) {
-  const { porta } = props
+  const porta = props.value
 
   const selecionada = porta.selecionada ? styles.selecionada : "";
 
+  const alternarSelecao = (_e) => props.handleSelect(porta.alternarSelecao())
+
   return (
-    <div className={styles.area}>
+    <div className={styles.area} onClick={alternarSelecao}>
       <div className={`${styles.estrutura} ${selecionada}`}>
         <div className={styles.porta}>
           <div className={styles.numero}>{porta.numero}</div>
