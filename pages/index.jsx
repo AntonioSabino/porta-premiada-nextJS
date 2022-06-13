@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Porta from "../components/Porta";
 import Presente from "../components/Presente";
-import { atualizarPortas, criarPortas } from "../functions/portas";
-import PortaModel from "../model/porta";
+import { atualizarPortas, criarPortas } from "../utils/portas";
 
 export default function Home() {
   const [portas, setPortas] = useState(criarPortas(3, 2));
