@@ -2,8 +2,8 @@ import styles from "../../../styles/jogo.module.css";
 import { useEffect, useState } from "react";
 import Porta from "../../../components/Porta";
 import { atualizarPortas, criarPortas } from "../../../utils/portas";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import Link from "../../../node_modules/next/link";
+import { useRouter } from "../../../node_modules/next/router";
 
 export default function Jogo() {
   const router = useRouter();

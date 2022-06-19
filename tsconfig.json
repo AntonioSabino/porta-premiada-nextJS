@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/jogo/[portas]/[temPresente].jsx"  ],
+, "pages/jogo/[portas]/[temPresente].tsx"  ],
   "exclude": [
     "node_modules"
   ]
